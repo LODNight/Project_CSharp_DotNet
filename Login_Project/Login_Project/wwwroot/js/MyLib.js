@@ -1,0 +1,3 @@
+﻿function Clickme() {
+    alert('AAAAAAaa');
+}
