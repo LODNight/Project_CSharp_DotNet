@@ -9,6 +9,7 @@ public class AdminController : Controller
     [Route("")]
     public IActionResult Index()
     {
+        //AASD
         return View();
     }
 }
