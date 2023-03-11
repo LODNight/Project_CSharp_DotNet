@@ -1,14 +1,16 @@
 ﻿<link rel="stylesheet" href="~/css/style.css">
 
 <script src="~/js/MyLib.js" type="text/javascript"></script>
+<script src="~/js/jquery-3.6.3.min.js"></script>
 <h3>Index</h3>
 <p class="a">Hello Class</p>
 <button onclick="Clickme">Click</button>
 
 <script>
     $(document).ready(function(){
-      $("a").click(function(){
-        $(this).hide();
+      $("p").click(function(){
+        //$(this).hide();
+        alert("Aaaaaaaaaa");
       });
     });
 </script>
