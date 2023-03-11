@@ -9,6 +9,9 @@ public class AdminController : Controller
     [Route("")]
     public IActionResult Index()
     {
+        //123
+        //hello
+        //i feel so good
         return View();
     }
 }
