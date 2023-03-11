@@ -5,6 +5,7 @@ namespace CoffeePeaceful.Controllers;
 public class AdminController : Controller
 {
     [Route("index")]
+    [Route("~/")]
     [Route("")]
     public IActionResult Index()
     {
