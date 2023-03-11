@@ -16,7 +16,7 @@ public class AdminController : Controller
     [Route("login")]
     public IActionResult Login()
     {
-        //AASD
+        //Username
         return View();
     }
 }
