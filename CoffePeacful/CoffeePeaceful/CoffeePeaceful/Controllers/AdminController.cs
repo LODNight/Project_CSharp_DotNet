@@ -12,4 +12,11 @@ public class AdminController : Controller
         //AASD
         return View();
     }
+
+    [Route("login")]
+    public IActionResult Login()
+    {
+        //AASD
+        return View();
+    }
 }
