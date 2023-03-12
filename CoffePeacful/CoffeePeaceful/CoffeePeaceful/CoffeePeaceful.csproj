@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\css\admin\" />
     <Folder Include="wwwroot\css\user\" />
-    <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
 </Project>
