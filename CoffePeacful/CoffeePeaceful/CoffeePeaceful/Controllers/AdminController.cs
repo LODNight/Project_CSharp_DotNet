@@ -5,18 +5,16 @@ namespace CoffeePeaceful.Controllers;
 public class AdminController : Controller
 {
     [Route("index")]
-    //[Route("~/")]
     [Route("")]
+    //[Route("~/")]
     public IActionResult Index()
     {
-        //AASD
         return View();
     }
 
     [Route("login")]
     public IActionResult Login()
     {
-        //Username
         return View();
     }
 }
