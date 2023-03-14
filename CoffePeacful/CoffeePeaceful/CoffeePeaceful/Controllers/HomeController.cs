@@ -4,9 +4,9 @@ namespace CoffeePeaceful.Controllers;
 [Route("home")]
 public class HomeController : Controller
 {
-    [Route("~/")]
     [Route("index")]
     [Route("")]
+    [Route("~/")]
     public IActionResult Index()
     {
         return View();
