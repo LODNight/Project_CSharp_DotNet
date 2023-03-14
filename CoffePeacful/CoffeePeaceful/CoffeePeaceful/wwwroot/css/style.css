@@ -5,9 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +21,94 @@ body {
     background-position: center;
 }
 
+.box img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 248px;
+    height: 180px;
+    position: relative;
+    border-radius: 7px 7px 3px 3px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #202426;
+    transition: 1s ease-in-out;
+}
+
+.wrapper-box {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+img:hover {
+    background-position: center;
+    background-size: cover;
+    object-position: center;
+    object-fit: cover;
+    transform: scale(2.3) rotate(360deg);
+    transition: 1s;
+}
+
+.box .item {
+    width: 250px;
+    height: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #162938;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin-left: 75px;
+    overflow: hidden;
+    margin-bottom: 20px
+}
+
+.box h2, p {
+    position: relative;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+
+.box input {
+    color: #fff;
+    overflow: hidden;
+    width: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0 15px 0;
+    padding: 5px 10px;
+    transition: .3s ease-in;
+}
+
+    .box input:hover {
+        background-color: #202426;
+    }
+
+.box {
+    /* background-image: url('c.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 198px 100px;
+    background-origin: blur(20px); */
+    display: flex;
+}
+
 .logo {
     font-size: 2.3em;
     color: #fff;
-    font-weight: 500;
 }
 
 header {
@@ -34,8 +121,8 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    font-size: 1.5em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .navigation a {
@@ -48,7 +135,6 @@ header {
 
 .navigation .btnPopup {
     position: relative;
-    bottom: 3px;
     margin-left: 20px;
     border: 2px solid #fff;
     cursor: pointer;
@@ -63,10 +149,10 @@ header {
     padding: 0 10 0 10;
 }
 
-.navigation .btnPopup:hover {
-    background-color: #fff;
-    color: #162938;
-}
+    .navigation .btnPopup:hover {
+        background-color: #fff;
+        color: #162938;
+    }
 
 .navigation a::after {
     content: '';
@@ -96,7 +182,7 @@ header {
     border-radius: 10px;
     backdrop-filter: blur(20px);
     /* border: 3px solid #343638; */
-    box-shadow: 10px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 25px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +193,7 @@ header {
 
 .show {
     top: 0;
-    animation: xuong 1s ease-in-out;
+    animation: xuong .5s ease-in-out;
 }
 
 @keyframes xuong {
@@ -122,7 +208,7 @@ header {
 
 .show2 {
     top: -700px;
-    animation: xuong2 2s alternate;
+    animation: xuong2 1s alternate;
 }
 
 @keyframes xuong2 {
@@ -182,9 +268,9 @@ header {
     overflow: hidden;
 }
 
-.close:hover {
-    animation: slide .5s alternate;
-}
+    .close:hover {
+        animation: slide .5s alternate;
+    }
 
 @keyframes slide {
     from {
@@ -233,47 +319,51 @@ input::placeholder {
     top: -5px;
 } */
 
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1.5em;
-    color: #fff;
-    font-weight: 500;
-    padding: 5px 28px 0 10px;
-}
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1.3em;
+        color: #fff;
+        font-weight: 500;
+        padding: 5px 28px 0 10px;
+    }
 
-.input-box .icon {
-    position: absolute;
-    bottom: 30%;
-    right: 2%;
-    font-size: 1.5em;
-    line-height: 1.2em;
-    color: #fff
-}
+    .input-box .icon {
+        position: absolute;
+        bottom: 30%;
+        right: 2%;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        color: #fff
+    }
 
 .forgot-pass {
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
     justify-content: space-between;
     margin: -15px 0 20px 0;
 }
 
-.forgot-pass #rememberP {
-    accent-color: #162938;
-    width: 13px;
-    height: 13px;
-}
+    .forgot-pass #rememberP {
+        accent-color: #162938;
+        width: 13px;
+        height: 13px;
+    }
 
-.forgot-pass a {
+    .forgot-pass a {
+        text-decoration: none;
+        color: #162938;
+    }
+
+        .forgot-pass a:hover {
+            color: #fff;
+        }
+
+.register-link {
     text-decoration: none;
-    color: #162938;
-}
-
-.forgot-pass a:hover {
-    color: #fff;
 }
 
 button {
@@ -283,17 +373,17 @@ button {
     border: 2px solid #fff;
     background: transparent;
     color: #fff;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 500;
     transition: .5s;
     cursor: pointer;
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
 }
 
-button:hover {
-    background: #fff;
-    color: #162938;
-}
+    button:hover {
+        background: #fff;
+        color: #162938;
+    }
 
 /* button:hover::after{
     content: '';
@@ -316,26 +406,17 @@ button:hover {
 
 .register {
     text-align: center;
-    /*font-size: 1.2em;*/
+    font-size: 1em;
     color: #162938;
     font-weight: 500;
 }
 
-.register a {
-    text-decoration: none;
-    color: #162938;
-    font-weight: 500;
-}
+    .register a {
+        text-decoration: none;
+        color: #162938;
+        font-weight: 550;
+    }
 
-.register a:hover {
-    color: #fff;
-}
-
-h1{
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 500;
-}
+        .register a:hover {
+            color: #fff;
+        }
