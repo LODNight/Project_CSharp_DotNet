@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empty Coffe</title>
-    <link rel="stylesheet" href="~/css/style.css">
-
-    @*    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*@
+    <title>Coffee Peacful</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="~/user/css/style.css">
 
 </head>
 <body>
-    <header>
-        <h2 class="logo">Empty Coffe</h2>
-
-        <nav class="navigation">
-            <a asp-controller="home" asp-action="index">Home</a>
-            <a asp-controller="about" asp-action="index">About</a>
-            <a asp-controller="product" asp-action="index">Product</a>
-            <a asp-controller="contact" asp-action="index">Contact</a>
-
-            <!-- <a href="">Login</a> -->
-            <input class="btnPopup" type="submit" value="Login" />
-        </nav>
+    <!-- header section starts -->
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo"><img src="~/user/images/logo.jpg" alt=""></a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
     </header>
+    <!-- header section ends -->
+    <!-- home section starts -->
+    <div class="home-bg">
+        <section class="home" id="home">
+            <div class="content">
+                <h3>Coffee Peaceful</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, autem distinctio? Eum error corrupti aliquid.</p>
+                <a href="#about" class="btn">About Us</a>
+            </div>
+        </section>
+    </div>
 
-
-
-    @RenderBody()
-
+    <!-- home section ends -->
+    @RenderBody();
 </body>
-<script src="~/js/users/js.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+@*<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>*@
+@*<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>*@
 </html>
 

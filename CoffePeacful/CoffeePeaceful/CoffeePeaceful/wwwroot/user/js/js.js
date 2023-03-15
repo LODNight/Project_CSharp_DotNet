@@ -5,7 +5,13 @@ const registerLink = document.querySelector('.register-link');
 const closeWraper = document.querySelector('.close');
 
 console.log(login);
+let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.header .flex .navbar');
 
+menu.onclick = () => {
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
 closeWraper.addEventListener('click', () => {
     wrapper.classList.remove('show');
     wrapper.classList.add('show2');

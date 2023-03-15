@@ -7,14 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\NewFolder\**" />
     <Compile Remove="wwwroot\users\**" />
+    <Content Remove="wwwroot\NewFolder\**" />
     <Content Remove="wwwroot\users\**" />
+    <EmbeddedResource Remove="wwwroot\NewFolder\**" />
     <EmbeddedResource Remove="wwwroot\users\**" />
+    <None Remove="wwwroot\NewFolder\**" />
     <None Remove="wwwroot\users\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Views\Home\" />
+    <Folder Include="wwwroot\user\" />
   </ItemGroup>
 
 </Project>
