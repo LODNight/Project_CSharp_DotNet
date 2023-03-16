@@ -19,7 +19,7 @@
                 <a href="#about">About</a>
                 <a href="#menu">Menu</a>
                 <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact</a>
+                <a asp-controller="contact" asp-action="index">Contact</a>
                 <input type="submit" class="btnPopup" value="Login">
 
             </nav>
@@ -39,7 +39,43 @@
     </div>
 
     <!-- home section ends -->
-    @RenderBody();
+    @RenderBody()
+
+    <footer>
+        <div class="logo-footer">
+            <i class="fa-solid fa-mug-saucer"></i>
+            <p>My Cafe</p>
+        </div>
+
+        <div class="navigation-footer">
+            <h2>Di chuyen</h2>
+            <nav>
+                <a>123</a>
+                <a>123</a>
+                <a>123</a>
+                <a>123</a>
+            </nav>
+        </div>
+
+        <div class="contact-footer">
+            <h2>Thong tin lien he</h2>
+            <div class="item">
+                <p>Lien he</p>
+                <p>Email</p>
+                <p>Email</p>
+            </div>
+        </div>
+
+        <div class="my-website">
+            <h2>My website</h2>
+            <div class="item_my_website">
+                <p>Facebook</p>
+                <p>Facebook</p>
+                <p>Facebook</p>
+            </div>
+        </div>
+
+    </footer>
 
     <script src="~/user/js/js.js"></script>
 </body>

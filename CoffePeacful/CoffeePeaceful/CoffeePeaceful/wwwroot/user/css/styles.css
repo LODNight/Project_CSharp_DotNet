@@ -146,6 +146,7 @@ section{
     color: var(--black);
     font-family: 'Merienda One', cursive;
     }
+
 .home-bg .home .content p{
     padding: 1rem 0;
     font-size: 1.6rem;
@@ -233,8 +234,8 @@ section{
     }
 
 .menu .box-container .box img{
-    width: 100%;
     margin-bottom: 1rem;
+    height: 300px;
     }
 
 .menu .box-container .box h3{
@@ -252,33 +253,36 @@ section{
 
 /* media queries */
 
-@media (max-width:900px){
-    html{
+@media (max-width:900px) {
+    html {
         font-size: 55%;
+    }
 }
 
-.input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #fff;
-    margin: 30px 0;
-}
-
-@media (max-width:768px){
-    #menu-btn{
-        display: inline-block;
-        transition: .2s linear;
-
+    .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid #fff;
+        margin: 30px 0;
     }
 
-    #menu-btn.fa-times{
+    @media (max-width:768px) {
+        #menu-btn {
+            display: inline-block;
+            transition: .2s linear;
+        }
+    }
+
+    #menu-btn.fa-times {
         transform: rotate(180deg);
     }
 
-    .header .flex .navbar{
+    .header .flex .navbar {
         position: absolute;
-        top: 99%; left: 0; right: 0;
+        top: 99%;
+        left: 0;
+        right: 0;
         background-color: var(--white);
         border-top: var(--border);
         border-bottom: var(--border);
@@ -286,60 +290,61 @@ section{
         transition: .2s linear;
     }
 
-    .header .flex .navbar.active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
+        .header .flex .navbar.active {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
 
 
-    .header .flex .navbar a{
-        display: block;
-        margin: 2rem;
-    }
+        .header .flex .navbar a {
+            display: block;
+            margin: 2rem;
+        }
 
-    .home-bg{
+    .home-bg {
         background-position: left;
     }
 
-    .home-bg .home{
-        justify-content: center;
+        .home-bg .home {
+            justify-content: center;
         }
 
-    .home-bg .home .content h3{
-        font-size: 4rem;
-}
+            .home-bg .home .content h3 {
+                font-size: 4rem;
+            }
 
-    .about .content h3{
+    .about .content h3 {
         font-size: 3rem;
-}
+    }
 
     button:hover {
         background: #fff;
         color: #162938;
     }
 
-@media (max-width:450px){
-    html{
-        font-size: 50%;
-}
+    @media (max-width:450px) {
+        html {
+            font-size: 50%;
+        }
+    }
 
-    .heading h3{
+    .heading h3 {
         font-size: 3rem;
     }
-} */
 
-.register {
-    text-align: center;
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-}
 
-.heading img{
-    height: 5rem !important;
-    width: 200px !important;
+    .register {
+        text-align: center;
+        font-size: 1em;
+        color: #162938;
+        font-weight: 500;
     }
 
-.menu img{
-    width: 350px;
-    height: 300px
-        }
+    .heading img {
+        height: 5rem !important;
+        width: 200px !important;
+    }
+
+    .menu img {
+        width: 350px;
+        height: 300px;
+    }

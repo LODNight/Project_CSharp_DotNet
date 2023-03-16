@@ -4,7 +4,6 @@ const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const closeWraper = document.querySelector('.close');
 
-console.log(login);
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .flex .navbar');
 
