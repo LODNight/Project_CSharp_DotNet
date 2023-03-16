@@ -59,7 +59,7 @@ section{
 .heading img{
     height: 5rem;
     margin-bottom: 1rem;
-}
+    }
 
 .heading h3{
     font-size: 4rem;
@@ -91,6 +91,7 @@ section{
 
 .header .flex{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -110,7 +111,7 @@ section{
 .header .flex .navbar a:hover{
     text-decoration: underline;
     color: var(--main-color);
-}
+    }
 
 #menu-btn{
     display: none;
@@ -128,7 +129,11 @@ section{
 .home-bg .home{
     min-height: 70rem;
     display: flex;
+    justify-content: center;
     align-items: center;
+    transition: height .5s;
+    overflow: hidden;
+    top: -700px;
 }
 
 .home-bg .home .content{
@@ -140,7 +145,7 @@ section{
     font-size: 6rem;
     color: var(--black);
     font-family: 'Merienda One', cursive;
-}
+    }
 .home-bg .home .content p{
     padding: 1rem 0;
     font-size: 1.6rem;
@@ -161,11 +166,11 @@ section{
 
 .about .image img{
     width: 100%;
-}
+    }
 
 .about .content{
     flex: 1 1 40rem;
-}
+    }
 
 .about .content h3{
     font-size: 4rem;
@@ -215,17 +220,22 @@ section{
     gap: 1.5rem;
     align-items: flex-start;
     justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    color: #fff;
+    overflow: hidden;
 }
 
 .menu .box-container .box{
     text-align: center;
     
-}
+    }
 
 .menu .box-container .box img{
     width: 100%;
     margin-bottom: 1rem;
-}
+    }
 
 .menu .box-container .box h3{
     font-size: 2rem;
@@ -245,14 +255,21 @@ section{
 @media (max-width:900px){
     html{
         font-size: 55%;
-    }
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
 }
 
 @media (max-width:768px){
     #menu-btn{
         display: inline-block;
         transition: .2s linear;
-        
+
     }
 
     #menu-btn.fa-times{
@@ -268,10 +285,10 @@ section{
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .2s linear;
     }
-    
+
     .header .flex .navbar.active{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
+}
 
 
     .header .flex .navbar a{
@@ -285,34 +302,44 @@ section{
 
     .home-bg .home{
         justify-content: center;
-    }
+        }
 
     .home-bg .home .content h3{
         font-size: 4rem;
-    }
+}
 
     .about .content h3{
         font-size: 3rem;
-    }
-
 }
+
+    button:hover {
+        background: #fff;
+        color: #162938;
+    }
 
 @media (max-width:450px){
     html{
         font-size: 50%;
-    }
+}
 
     .heading h3{
         font-size: 3rem;
     }
+} */
+
+.register {
+    text-align: center;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
 }
 
 .heading img{
     height: 5rem !important;
     width: 200px !important;
-}
+    }
 
 .menu img{
     width: 350px;
     height: 300px
-}
+        }
