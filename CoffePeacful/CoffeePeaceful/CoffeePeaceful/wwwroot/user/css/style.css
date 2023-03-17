@@ -51,9 +51,9 @@ section {
     margin: 0 auto;
 }
 
-section .home{
-    position: relative;
-}
+    section .home {
+        position: relative;
+    }
 
 /* class */
 
@@ -244,24 +244,23 @@ section .home{
     justify-content: center;
 }
 
-.menu .box-container .box {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
+    .menu .box-container .box {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
-.menu .box-container .box img {
-    width: 100%;
-    margin-bottom: 1rem;
-    height: 350px;
-}
+        .menu .box-container .box img {
+            width: 100%;
+            margin-bottom: 1rem;
+            height: 350px;
+        }
 
-.menu .box-container .box h3 {
-    font-size: 2rem;
-    color: var(--black);
-}
-
+        .menu .box-container .box h3 {
+            font-size: 2rem;
+            color: var(--black);
+        }
 
 
 
@@ -335,25 +334,30 @@ section .home{
     }
 }
 
-
-/*FOOTER*/
 footer {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    left: 0;
+    /*align-items: center;*/
+    width: 100%; height: 300px;
+    left: 0; bottom: 0; top: 0;
     position: relative;
-    bottom: 0;
-    background-color: #162938;
+    background-color: var(--black);
+    color: var(--white);
 }
 
-footer .logo-footer, .navigation-footer, .contact-footer, .my-website {
-    width: 150px;
-    overflow: hidden;
+    footer .logo-footer, .navigation-footer, .contact-footer, .my-website {
+        width: 150px;
+        overflow: hidden;
+    }
+
+.navigation-footer, .contact-footer, .my-website {
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
 }
 
 .navigation-footer, .contact-footer, .my-website {
@@ -365,9 +369,16 @@ footer .logo-footer, .navigation-footer, .contact-footer, .my-website {
     height: 200px;
 }
 
-.contact-footer p, .my-website p {
-    font-size: 1em;
-    font-weight: 500;
+footer .logo-footer {
+    margin-right: 50px;
+    position: relative;
+    left: 5%;
+    min-width: 100px;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
 }
 
 footer .logo-footer {
